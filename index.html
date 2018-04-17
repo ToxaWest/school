@@ -8,75 +8,171 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Главная</title>
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+  <body class="bg-warning">
+	  <div class="container bg-light">
+		  <header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="index.html">Школа #1</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  Dropdown
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" href="#">Action</a>
-			  <a class="dropdown-item" href="#">Another action</a>
-			  <div class="dropdown-divider"></div>
-			  <a class="dropdown-item" href="#">Something else here</a>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="teachers.html">Учителя школы</a>
+				  </li>
+                    <li class="nav-item bg-danger">
+                        <a class="nav-link text-white" href="register.html">Регистрация на конкурс Мисс Школа !!!</a>
+                    </li>
+				</ul>
+			  </div>
+			</nav>
+		  </header>
+		  <main class="row">
+			<div id="demo" class="carousel slide col-md-8" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="img/054.jpg" alt="Los Angeles" width="800" height="400">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/800x400-036.png" alt="Chicago" width="800" height="400">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/landscape-5-800x400.jpg" alt="New York" width="800" height="400">
+				</div>
+			  </div>
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			  </a>
 			</div>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
-		  </li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-		  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
-	  </div>
-	</nav>
-    <div id="demo" class="carousel slide container" data-ride="carousel">
+              <div class="col-md-4">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#home">Расписание</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#menu1">Рейтинг учеников</a>
+                      </li>
+                  </ul>
 
-	  <!-- Indicators -->
-	  <ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-	  </ul>
-	  
-	  <!-- The slideshow -->
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img src="img/054.jpg" alt="Los Angeles" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-		  <img src="img/800x400-036.png" alt="Chicago" width="1100" height="500">
-		</div>
-		<div class="carousel-item">
-		  <img src="img/landscape-5-800x400.jpg" alt="New York" width="1100" height="500">
-		</div>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                      <div class="tab-pane active container mt-4" id="home">
+                          <div class="form-group">
+                              <label >Введите дату</label>
+                              <input type="date" name="bday" max="3000-12-31"
+                                     min="1000-01-01" class="form-control"/>
+                          </div>
+                          <button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Показать расписание</button>
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Расписание</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <div class="modal-body text-center">
+                                          <h2 class="alert alert-danger"><strong>Oooops,</strong> расписание сейчас недоступно</h2>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane container mt-4" id="menu1">
+                          <table class="table">
+                              <thead class="thead-dark">
+                              <tr>
+                                  <th>#</th>
+                                  <th>First Name</th>
+                                  <th>Last Name</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-group text-white mt-3">
+                  <div class="card bg-success ">
+                      <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                  </div>
+                  <div class="card bg-primary">
+                      <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                  </div>
+                  <div class="card bg-info">
+                      <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-12 mt-3">
+                  <h2 class="mb-4 text-center">Лучшие ученики</h2>
+                  <section class="row text-center placeholders">
+                      <div class="col-6 col-sm-3 placeholder">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                          <h4>Label</h4>
+                          <div class="text-muted">Something else</div>
+                      </div>
+                      <div class="col-6 col-sm-3 placeholder">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                          <h4>Label</h4>
+                          <span class="text-muted">Something else</span>
+                      </div>
+                      <div class="col-6 col-sm-3 placeholder">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                          <h4>Label</h4>
+                          <span class="text-muted">Something else</span>
+                      </div>
+                      <div class="col-6 col-sm-3 placeholder">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                          <h4>Label</h4>
+                          <span class="text-muted">Something else</span>
+                      </div>
+                  </section>
+              </div>
+		  </main>
 	  </div>
-	  
-	  <!-- Left and right controls -->
-	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-		<span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#demo" data-slide="next">
-		<span class="carousel-control-next-icon"></span>
-	  </a>
-	</div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
